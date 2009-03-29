@@ -631,3 +631,59 @@ Processing ChatsController#show (for 127.0.0.1 at 2009-03-29 21:23:19) [GET]
   Parameters: {"id"=>"1"}
 Rendering chats/show
 Completed in 3ms (View: 2, DB: 0) | 200 OK [http://phander.ru_dev/chats/1]
+
+
+Processing ChatsController#show (for 127.0.0.1 at 2009-03-29 21:26:48) [GET]
+  Parameters: {"id"=>"1"}
+Rendering chats/show
+
+ActionView::TemplateError (undefined local variable or method `nfigOrbited' for #<ActionView::Base:0x259133c>) on line #4 of app/views/chats/show.html.erb:
+1: <html>
+2: <head>
+3: <script src="http://<%= ConfigOrbited[:host] %>:<%= ConfigOrbited[:port] %>/static/Orbited.js"></script>
+4: <script src="http://Co<%= nfigOrbited[:host] %>:<%= ConfigOrbited[:port] %>/static/protocols/stomp/stomp.js"></script>
+5: 
+6: <script src="http://<%= ConfigOrbited[:host] %>:<%= ConfigOrbited[:port] %>/javascripts/scripts.js"></script>
+7:  <%= javascript_include_tag :defaults %>
+
+    app/views/chats/show.html.erb:4
+
+Rendered rescues/_trace (111.5ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ChatsController#show (for 127.0.0.1 at 2009-03-29 21:27:22) [GET]
+  Parameters: {"id"=>"1"}
+Rendering chats/show
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://phander.ru_dev/chats/1]
+
+
+Processing ChatsController#show (for 127.0.0.1 at 2009-03-29 21:27:28) [GET]
+  Parameters: {"id"=>"1"}
+Rendering chats/show
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://phander.ru_dev/chats/1]
+
+
+Processing ChatsController#show (for 127.0.0.1 at 2009-03-29 21:27:42) [GET]
+  Parameters: {"id"=>"1"}
+Rendering chats/show
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://phander.ru_dev/chats/1]
+
+
+Processing ChatsController#show (for 127.0.0.1 at 2009-03-29 21:28:23) [GET]
+  Parameters: {"id"=>"1"}
+Rendering chats/show
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://phander.ru_dev/chats/1]
+
+
+Processing ChatsController#show (for 127.0.0.1 at 2009-03-29 21:28:44) [GET]
+  Parameters: {"id"=>"1"}
+Rendering chats/show
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://phander.ru_dev/chats/1]
+
+
+Processing ChatsController#show (for 127.0.0.1 at 2009-03-29 21:29:01) [GET]
+  Parameters: {"id"=>"1"}
+Rendering chats/show
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://phander.ru_dev/chats/1]
