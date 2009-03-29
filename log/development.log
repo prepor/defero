@@ -1007,3 +1007,73 @@ ActionController::RoutingError (No route matches "/" with {:method=>:get}):
   
 
 Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 03:39:38) [GET]
+
+ActionController::RoutingError (No route matches "/posts/best/daily.rss" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ChatsController#show (for 127.0.0.1 at 2009-03-30 03:45:22) [GET]
+  Parameters: {"id"=>"1"}
+Rendering chats/show
+Completed in 7ms (View: 6 | 200 OK [http://igc.dev/chats/1]
+
+
+Processing ChatsController#show (for 127.0.0.1 at 2009-03-30 03:45:42) [GET]
+  Parameters: {"id"=>"1"}
+Rendering chats/show
+Completed in 52ms (View: 50 | 200 OK [http://phander.ru_dev/chats/1]
+
+
+Processing ChatsController#show (for 127.0.0.1 at 2009-03-30 04:03:14) [GET]
+  Parameters: {"id"=>"1"}
+Rendering chats/show
+Completed in 7ms (View: 5 | 200 OK [http://igc.dev/chats/1]
+
+
+Processing ChatsController#show (for 127.0.0.1 at 2009-03-30 04:04:05) [GET]
+  Parameters: {"id"=>"1"}
+Rendering chats/show
+Completed in 59ms (View: 57 | 200 OK [http://igc.dev/chats/1]
+
+
+Processing ChatsController#show (for 127.0.0.1 at 2009-03-30 04:04:14) [GET]
+  Parameters: {"id"=>"1"}
+Rendering chats/show
+Completed in 3ms (View: 1 | 200 OK [http://phander.ru_dev/chats/1]
+
+
+Processing ChatsController#show (for 127.0.0.1 at 2009-03-30 04:04:39) [GET]
+  Parameters: {"id"=>"1"}
+Rendering chats/show
+Completed in 8ms (View: 6 | 200 OK [http://phander.ru_dev/chats/1]
+
+
+Processing ChatsController#show (for 127.0.0.1 at 2009-03-30 04:04:42) [GET]
+  Parameters: {"id"=>"1"}
+Rendering chats/show
+Completed in 4ms (View: 2 | 200 OK [http://igc.dev/chats/1]
+
+
+Processing ChatsController#show (for 127.0.0.1 at 2009-03-30 04:04:52) [GET]
+  Parameters: {"id"=>"1"}
+Rendering chats/show
+Completed in 8ms (View: 5 | 200 OK [http://igc.dev/chats/1]
+
+
+Processing ChatsController#show (for 127.0.0.1 at 2009-03-30 04:05:09) [GET]
+  Parameters: {"id"=>"1"}
+Rendering chats/show
+Completed in 3ms (View: 2 | 200 OK [http://phander.ru_dev/chats/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 04:09:52) [GET]
+
+ActionController::RoutingError (No route matches "/posts/best/daily.rss" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
