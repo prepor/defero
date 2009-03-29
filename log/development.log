@@ -932,3 +932,17 @@ Completed in 7ms (View: 0, DB: 0) | 200 OK [http://igc.dev/push]
 Processing MessagesController#push (for 127.0.0.1 at 2009-03-30 02:52:25) [POST]
   Parameters: {"commit"=>"Say", "authenticity_token"=>"aNUVj/J8Xsym6pHY582aH3cVZ8oE1TSJALGdMky/pTw=", "chat_input"=>"zxc", "channel"=>"CHANNEL_1"}
 Completed in 6ms (View: 1, DB: 0) | 200 OK [http://igc.dev/push]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 03:08:55) [GET]
+
+ActionController::RoutingError (No route matches "/posts/best/daily.rss" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ChatsController#show (for 127.0.0.1 at 2009-03-30 03:16:13) [GET]
+  Parameters: {"id"=>"1"}
+Rendering chats/show
+Completed in 68ms (View: 67 | 200 OK [http://igc.dev/chats/1]
