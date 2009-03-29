@@ -1,4 +1,4 @@
-document.domain = document.domain
+
 Orbited.settings.port = '8000';
 Orbited.settings.hostname = 'igc.dev';
 TCPSocket = Orbited.TCPSocket;
