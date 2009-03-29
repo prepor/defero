@@ -946,3 +946,9 @@ Processing ChatsController#show (for 127.0.0.1 at 2009-03-30 03:16:13) [GET]
   Parameters: {"id"=>"1"}
 Rendering chats/show
 Completed in 68ms (View: 67 | 200 OK [http://igc.dev/chats/1]
+
+
+Processing ChatsController#show (for 127.0.0.1 at 2009-03-30 03:18:15) [GET]
+  Parameters: {"id"=>"1"}
+Rendering chats/show
+Completed in 6ms (View: 4 | 200 OK [http://igc.dev/chats/1]
