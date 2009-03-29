@@ -952,3 +952,50 @@ Processing ChatsController#show (for 127.0.0.1 at 2009-03-30 03:18:15) [GET]
   Parameters: {"id"=>"1"}
 Rendering chats/show
 Completed in 6ms (View: 4 | 200 OK [http://igc.dev/chats/1]
+
+
+Processing ChatsController#show (for 127.0.0.1 at 2009-03-30 03:21:24) [GET]
+  Parameters: {"id"=>"1"}
+Rendering chats/show
+Completed in 8ms (View: 6 | 200 OK [http://igc.dev/chats/1]
+
+
+Processing MessagesController#push (for 127.0.0.1 at 2009-03-30 03:21:26) [POST]
+  Parameters: {"commit"=>"Say", "authenticity_token"=>"aNUVj/J8Xsym6pHY582aH3cVZ8oE1TSJALGdMky/pTw=", "chat_input"=>"asd", "channel"=>"CHANNEL_1"}
+Completed in 90ms (View: 0 | 200 OK [http://igc.dev/push]
+
+
+Processing MessagesController#push (for 127.0.0.1 at 2009-03-30 03:21:27) [POST]
+  Parameters: {"commit"=>"Say", "authenticity_token"=>"aNUVj/J8Xsym6pHY582aH3cVZ8oE1TSJALGdMky/pTw=", "chat_input"=>"asd", "channel"=>"CHANNEL_1"}
+Completed in 5ms (View: 0 | 200 OK [http://igc.dev/push]
+
+
+Processing MessagesController#push (for 127.0.0.1 at 2009-03-30 03:21:28) [POST]
+  Parameters: {"commit"=>"Say", "authenticity_token"=>"aNUVj/J8Xsym6pHY582aH3cVZ8oE1TSJALGdMky/pTw=", "chat_input"=>"asd", "channel"=>"CHANNEL_1"}
+Completed in 6ms (View: 0 | 200 OK [http://igc.dev/push]
+
+
+Processing MessagesController#push (for 127.0.0.1 at 2009-03-30 03:21:34) [POST]
+  Parameters: {"commit"=>"Say", "authenticity_token"=>"aNUVj/J8Xsym6pHY582aH3cVZ8oE1TSJALGdMky/pTw=", "chat_input"=>"asd", "channel"=>"CHANNEL_1"}
+Completed in 6ms (View: 0 | 200 OK [http://igc.dev/push]
+
+
+Processing MessagesController#push (for 127.0.0.1 at 2009-03-30 03:21:37) [POST]
+  Parameters: {"commit"=>"Say", "authenticity_token"=>"aNUVj/J8Xsym6pHY582aH3cVZ8oE1TSJALGdMky/pTw=", "chat_input"=>"adsaa", "channel"=>"CHANNEL_1"}
+Completed in 5ms (View: 0 | 200 OK [http://igc.dev/push]
+
+
+Processing ChatsController#show (for 127.0.0.1 at 2009-03-30 03:21:40) [GET]
+  Parameters: {"id"=>"1"}
+Rendering chats/show
+Completed in 3ms (View: 2 | 200 OK [http://igc.dev/chats/1]
+
+
+Processing MessagesController#push (for 127.0.0.1 at 2009-03-30 03:21:44) [POST]
+  Parameters: {"commit"=>"Say", "authenticity_token"=>"aNUVj/J8Xsym6pHY582aH3cVZ8oE1TSJALGdMky/pTw=", "chat_input"=>"qwezxc", "channel"=>"CHANNEL_1"}
+Completed in 9ms (View: 0 | 200 OK [http://igc.dev/push]
+
+
+Processing MessagesController#push (for 127.0.0.1 at 2009-03-30 03:21:46) [POST]
+  Parameters: {"commit"=>"Say", "authenticity_token"=>"aNUVj/J8Xsym6pHY582aH3cVZ8oE1TSJALGdMky/pTw=", "chat_input"=>"qwezxc", "channel"=>"CHANNEL_1"}
+Completed in 5ms (View: 0 | 200 OK [http://igc.dev/push]
