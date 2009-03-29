@@ -999,3 +999,11 @@ Completed in 9ms (View: 0 | 200 OK [http://igc.dev/push]
 Processing MessagesController#push (for 127.0.0.1 at 2009-03-30 03:21:46) [POST]
   Parameters: {"commit"=>"Say", "authenticity_token"=>"aNUVj/J8Xsym6pHY582aH3cVZ8oE1TSJALGdMky/pTw=", "chat_input"=>"qwezxc", "channel"=>"CHANNEL_1"}
 Completed in 5ms (View: 0 | 200 OK [http://igc.dev/push]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 03:23:21) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
