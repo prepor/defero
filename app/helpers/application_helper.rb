@@ -12,4 +12,16 @@ module ApplicationHelper
     "<script src=\"http://#{ConfigOrbited[:host]}:#{ConfigOrbited[:port]}/static/protocols/stomp/stomp.js\"></script>"
     ].join("\n")
   end
+  
+  def flash_mes
+    if flash[:error]
+  		{:class => 'error', :mes => flash[:error]}
+		elsif flash[:notice]
+  		{:class => 'notice', :mes => flash[:notice]}
+  	elsif flash[:success]
+    	{:class => 'success', :mes => flash[:success]}
+		else
+      nil
+    end
+  end
 end

@@ -1,0 +1,13 @@
+<p>
+Name:</br>
+<%= @site.name %>
+</p>
+<p>
+Secret key:</br>
+<%= @site.secret_key %>
+
+Anonymous?:</br>
+<%= @site.anonymous %>
+</p>
+<%= link_to 'Edit', edit_user_site_path(current_user, @site) %> |
+<%= link_to 'Back', user_sites_path(current_user) %>

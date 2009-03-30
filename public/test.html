@@ -1,0 +1,25 @@
+<html>
+<head>
+<script src="/javascripts/prototype.js" type="text/javascript"></script>
+<script src="/javascripts/effects.js" type="text/javascript"></script>
+<script src="/javascripts/dragdrop.js" type="text/javascript"></script>
+<script src="/javascripts/controls.js" type="text/javascript"></script>
+<script src="/javascripts/juggernaut/swfobject.js" type="text/javascript"></script>
+<script src="/javascripts/juggernaut/juggernaut.js" type="text/javascript"></script>
+<script src="/javascripts/application.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+new Juggernaut({"swf_address":"\/juggernaut\/juggernaut.swf","reconnect_attempts":3,"ei_swf_address":"\/juggernaut\/expressinstall.swf","host":"127.0.0.1","reconnect_intervals":3,"flash_version":8,"port":5001,"width":"0px","flash_color":"#fff","debug":true,"session_id":null,"swf_name":"juggernaut_flash","height":"0px","bridge_name":"juggernaut"});
+//]]>
+
+</script>
+</head>
+<body>
+    <form action="/messages" method="post" onsubmit="new Ajax.Request('/messages', {asynchronous:true, evalScripts:true, onComplete:function(request){$('chat_input').value = ''}, parameters:Form.serialize(this)}); return false;"><div style="margin:0;padding:0"></div>
+      <input id="chat_input" name="chat_input" size="20" type="text" value="" />
+      <input name="commit" type="submit" value="Add" />
+    </form>
+    <ul id="chat_data" style="list-style:none">
+    </ul>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<h1>Listing sites</h1>
+
+<table>
+  <tr>
+  </tr>
+
+<% @sites.each do |site| %>
+  <tr>
+	<td><%= site.name %></td>
+    <td><%= link_to 'Show', user_site_path(current_user, site) %></td>
+    <td><%= link_to 'Edit', edit_user_site_path(current_user, site) %></td>
+    <td><%= link_to 'Destroy', user_site_path(current_user, site), :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New site', new_user_site_path(current_user) %>

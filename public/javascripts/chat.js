@@ -1,0 +1,16 @@
+var login = prompt("Login", "");
+	new Juggernaut({"channels":["defero-3ae8f488e11"],
+		"height":"0px",
+		"session_id":null,
+		"bridge_name":"juggernaut",
+		"swf_address":"\/juggernaut\/juggernaut.swf",
+		"reconnect_attempts":3,
+		"ei_swf_address":"\/juggernaut\/expressinstall.swf",
+		"host":"127.0.0.1","reconnect_intervals":3,
+		"width":"0px",
+		"flash_version":8,
+		"debug":true,
+		"client_id":login,
+		"port":5001,
+		"flash_color":"#fff",
+		"swf_name":"juggernaut_flash"});

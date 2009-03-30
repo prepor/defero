@@ -23,15 +23,18 @@ Rails::Initializer.run do |config|
     :lib     => 'clearance', 
     :source  => 'http://gems.github.com', 
     :version => '>= 0.5.3'
-  config.gem 'stomp'
-  
+  config.gem 'json'
+  config.gem 'eventmachine'
+  config.gem 'juggernaut'
+  config.cache_store = :mem_cache_store
+  config.action_controller.session_store = :mem_cache_store
   # Only load the plugins named here, in the order given (default is alphabetical).
   # :all can be used as a placeholder for all plugins not explicitly named
   # config.plugins = [ :exception_notification, :ssl_requirement, :all ]
 
   # Skip frameworks you're not going to use. To use Rails without a database,
   # you must remove the Active Record framework.
-  config.frameworks -= [ :active_record, :active_resource, :action_mailer ]
+  # config.frameworks -= [ :active_record, :active_resource, :action_mailer ]
 
   # Activate observers that should always be running
   # config.active_record.observers = :cacher, :garbage_collector, :forum_observer
@@ -44,4 +47,6 @@ Rails::Initializer.run do |config|
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
   # config.i18n.default_locale = :de
 end
+
+DO_NOT_REPLY = "donotreply@example.com"
 

@@ -1,8 +1,22 @@
 ActionController::Routing::Routes.draw do |map|
-  # map.resources :messages
+  map.resources :sites
+  
+  map.generate_js '/javascripts/defero.js', :controller => 'chats', :action => 'generate_js'
+  # map.resources :sites
 
-  map.resources :chats
-  map.push_message 'push', :controller => 'messages', :action => 'push'
+  map.resources :users, :has_one => [:password, :confirmation], :has_many => [:sites]
+  map.resource :session
+  map.resources :passwords
+  
+  map.root :controller => 'chats', :action => 'index'
+  # map.resources :connections
+  map.create_connection 'connections/create', :controller => 'connections', :action => 'create'
+  map.destroy_connection 'connections/destroy', :controller => 'connections', :action => 'destroy'
+
+  map.resources :messages
+
+  map.resources :chats, :has_many => [:connections, :messages]
+  # map.push_message 'push', :controller => 'messages', :action => 'push'
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:

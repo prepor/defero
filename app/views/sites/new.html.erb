@@ -1,0 +1,16 @@
+<h1>New site</h1>
+
+<% form_for(@site, :url => user_sites_path(params[:user_id])) do |f| %>
+  <%= f.error_messages %>
+  	Name:</br>
+	<%= f.text_field :name %>
+	Secret key:</br>
+	<%= f.text_field :secret_key %>
+	Anonymous?:</br>
+	<%= f.check_box :anonymous %>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', user_sites_path(params[:user_id]) %>

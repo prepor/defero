@@ -1,17 +1,17 @@
-require 'stomp'
 class MessagesController < ApplicationController
-  def push
-    unless params[:chat_input].empty? 
-      javascript = render_to_string :update do |page|
-        page.insert_html :top, 'chat_data', "MESSAGE: #{h params[:chat_input]}"
-        page[:chat_input].clear
-        page[:chat_input].focus
-
+  include Utils::SQL
+  def create    
+    if Chat.check_user(:chat_id => params[:chat_id], :client_id => params[:username], :session_id => params[:check_code])
+      conn {|c| c.insert "INSERT INTO messages SET  message = '#{c.quote_string(params[:message])}', 
+                                                    login='#{c.quote_string(params[:username])}',
+                                                    chat_id='#{c.quote_string(params[:chat_id])}'"}    
+      render :juggernaut => {:type => :send_to_channels, :channels => [params[:chat_id]]} do |page|
+        page.insert_html :top, 'chat_data', "<li>#{h params[:username]}: #{h params[:message]}</li>"
       end
-      s = Stomp::Client.new
-      s.send(params[:channel],javascript)
-      s.close
+      render :nothing => true
+    else
+      head 403
     end
-    render :nothing => true
   end
 end
+

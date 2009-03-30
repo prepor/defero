@@ -1,56 +1,20 @@
-<html>
-<head>
-<script type="text/javascript" charset="utf-8">
-	document.domain = document.domain
-</script>
- <%= javascript_include_tag :defaults %>
-<script src="http://<%= ConfigOrbited[:host] %>:<%= ConfigOrbited[:port] %>/static/Orbited.js"></script>
-<script src="http://<%= ConfigOrbited[:host] %>:<%= ConfigOrbited[:port] %>/static/protocols/stomp/stomp.js"></script>
-
-<script type="text/javascript" charset="utf-8">
+<div class="span-24">
 	
-	Orbited.settings.port = '<%= ConfigOrbited[:port] %>';
-	Orbited.settings.hostname = '<%= ConfigOrbited[:host] %>';
-	TCPSocket = Orbited.TCPSocket;
+	<script src="http://<%= HOST_W_P %>/javascripts/juggernaut/swfobject.js" type="text/javascript"></script>
 
-	onload = function() {
-	// set up shell.
-	var output = $('chat_data');
-	// set up stomp client.
-	stomp = new STOMPClient();
-	stomp.onopen = function() {
-	//output.insert({"top" : "Transport openned"});
-	};
-	stomp.onclose = function(code) {
-	output.insert({"top" : "Transport closed (code: " + code + ")"});
-	};
-	stomp.onerror = function(error) {
-	alert("onerror: " + error);
-	};
-	stomp.onerrorframe = function(frame) {
-	alert("onerrorframe: " + frame.body);
-	};
-	stomp.onconnectedframe = function() {
-	output.insert({"top" : "Connected to chat room"});
-	};
-	stomp.onmessageframe = function(frame) {
-	eval(frame.body);
-	//output.insert({"top" : frame.body});
-	};
-	stomp.connect("<%= ConfigOrbited[:host] %>", 61613, 'UNIQUE_ID_PER_CLIENT', '');
-	setTimeout("stomp.subscribe('CHANNEL_1', {exchange:''})",5000);
-	};
-</script>
-
-</head>
-<body>
- <%= form_remote_tag(
- :url => push_message_path ) %>
- <%= hidden_field_tag('channel','CHANNEL_1')%>
- <%= text_field_tag( 'chat_input', '', { :size => 70, :id => 'chat_input'} ) %>
- <%= submit_tag("Say")  %>
- <%= ('<a href="/login">Login</a> to chat.')%>
- </form>
- <div id="chat_data" style="height:300px;border:1px solid black;overflow:scroll;"></div>
-</body>
-</html>
+	<script src="http://<%= HOST_W_P %>/javascripts/juggernaut/juggernaut.js" type="text/javascript"></script>
+	<script src="http://<%= HOST_W_P %>/javascripts/defero.js?chat_id=<%= @chat_id %>&promt=true" type="text/javascript"></script>
+	<form onsubmit="juggernaut.deferoSend('http://<%= HOST_W_P %>/chats/<%= @chat_id %>/messages', Form.serialize(this)); $('message').value = ''; return false;" method="post" action="#">
+	<input id="form_login" type="hidden" name="username" value=""/>
+      <%= text_field_tag( 'message', '', { :size => 20, :id => 'message'} ) %>
+      <%= submit_tag "Add" %>
+    </form>
+    <ul id="chat_data" style="list-style:none">
+    </ul>
+	<p>Users:
+		<span id='list_of_users'></span>
+	</p>
+	<script type="text/javascript" charset="utf-8">
+		$('form_login').value = login
+	</script>
+</div>

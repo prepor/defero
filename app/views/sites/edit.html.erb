@@ -1,0 +1,17 @@
+<h1>Editing site</h1>
+
+<% form_for(@site, :url => user_site_path(params[:user_id], @site)) do |f| %>
+  <%= f.error_messages %>
+	Name:</br>
+	<%= f.text_field :name %>
+	Secret key:</br>
+	<%= f.text_field :secret_key %>
+	Anonymous?:</br>
+	<%= f.check_box :anonymous %>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', user_site_path(current_user, @site) %> |
+<%= link_to 'Back', user_sites_path(current_user) %>
