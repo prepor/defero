@@ -14274,3 +14274,152 @@ Cache hit: site-igc ({})
  login='Zedmor',
  chat_id='igc-first'[0m
 Completed in 13ms (View: 1, DB: 2) | 200 OK [http://defero.dev/chats/igc-first/messages]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChatsController#show (for 127.0.0.1 at 2009-03-31 05:12:07) [GET]
+  Parameters: {"id"=>"3ae8f488e11"}
+Rendering template within layouts/application
+Rendering chats/show
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://defero.dev/chats/3ae8f488e11]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChatsController#generate_js (for 127.0.0.1 at 2009-03-31 05:12:08) [GET]
+  Parameters: {"promt"=>"true", "chat_id"=>"defero-3ae8f488e11"}
+Rendering chats/generate_js
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://defero.dev/javascripts/defero.js?chat_id=defero-3ae8f488e11&promt=true]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConnectionsController#destroy (for 127.0.0.1 at 2009-03-31 05:12:08) [POST]
+  Parameters: {"session_id"=>"fb00944d28d10e82f1b3cf95f70470d1e9d5d74f", "client_id"=>"andrew", "channels"=>["defero-3ae8f488e11"]}
+Cache read: defero-3ae8f488e11-users
+Cache write: defero-3ae8f488e11-users
+Cache hit: defero-3ae8f488e11-users ({})
+Completed in 16ms (View: 1, DB: 0) | 200 OK [http://defero.dev/connections/destroy]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-31 05:12:10) [GET]
+
+ActionController::RoutingError (No route matches "/juggernaut.swf" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChatsController#show (for 127.0.0.1 at 2009-03-31 05:12:56) [GET]
+  Parameters: {"id"=>"3ae8f488e11"}
+Rendering template within layouts/application
+Rendering chats/show
+Completed in 20ms (View: 16, DB: 0) | 200 OK [http://defero.dev/chats/3ae8f488e11]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChatsController#generate_js (for 127.0.0.1 at 2009-03-31 05:12:57) [GET]
+  Parameters: {"promt"=>"true", "chat_id"=>"defero-3ae8f488e11"}
+Rendering chats/generate_js
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://defero.dev/javascripts/defero.js?chat_id=defero-3ae8f488e11&promt=true]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-31 05:14:05) [GET]
+
+ActionController::RoutingError (No route matches "/juggernaut.swf" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChatsController#show (for 127.0.0.1 at 2009-03-31 05:14:05) [GET]
+  Parameters: {"id"=>"3ae8f488e11"}
+Rendering template within layouts/application
+Rendering chats/show
+Completed in 25ms (View: 21, DB: 0) | 200 OK [http://defero.dev/chats/3ae8f488e11]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChatsController#generate_js (for 127.0.0.1 at 2009-03-31 05:14:06) [GET]
+  Parameters: {"promt"=>"true", "chat_id"=>"defero-3ae8f488e11"}
+Rendering chats/generate_js
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://defero.dev/javascripts/defero.js?chat_id=defero-3ae8f488e11&promt=true]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-31 05:14:08) [GET]
+
+ActionController::RoutingError (No route matches "/juggernaut.swf" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChatsController#show (for 127.0.0.1 at 2009-03-31 05:14:45) [GET]
+  Parameters: {"id"=>"3ae8f488e11"}
+Rendering template within layouts/application
+Rendering chats/show
+Completed in 19ms (View: 8, DB: 0) | 200 OK [http://defero.dev/chats/3ae8f488e11]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChatsController#generate_js (for 127.0.0.1 at 2009-03-31 05:14:46) [GET]
+  Parameters: {"promt"=>"true", "chat_id"=>"defero-3ae8f488e11"}
+Rendering chats/generate_js
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://defero.dev/javascripts/defero.js?chat_id=defero-3ae8f488e11&promt=true]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConnectionsController#create (for 127.0.0.1 at 2009-03-31 05:14:52) [POST]
+  Parameters: {"client_id"=>"andrew", "channels"=>["defero-3ae8f488e11"]}
+Cache read: site-defero
+Cache write: site-defero
+Cache hit: site-defero ({})
+Cache read: defero-3ae8f488e11-users
+Cache write: defero-3ae8f488e11-users
+Cache hit: defero-3ae8f488e11-users ({})
+Cache write: defero-3ae8f488e11-users
+Cache write: defero-3ae8f488e11-users
+Completed in 195ms (View: 1, DB: 0) | 200 OK [http://defero.dev/connections/create]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-03-31 05:14:55) [POST]
+  Parameters: {"commit"=>"Add", "username"=>"andrew", "chat_id"=>"defero-3ae8f488e11", "message"=>"asd"}
+Cache read: site-defero
+Cache write: site-defero
+Cache hit: site-defero ({})
+  [4;36;1mSQL (1.4ms)[0m   [0;1mINSERT INTO messages SET message = 'asd', 
+ login='andrew',
+ chat_id='defero-3ae8f488e11'[0m
+Completed in 17ms (View: 1, DB: 2) | 200 OK [http://defero.dev/chats/defero-3ae8f488e11/messages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2009-03-31 05:15:03) [POST]
+  Parameters: {"commit"=>"Add", "username"=>"prepor", "check_code"=>"c0664601aa814f57a29c7fceaaaf8d629865b4f7", "chat_id"=>"igc-first", "message"=>"asd"}
+Cache read: site-igc
+Cache write: site-igc
+Cache hit: site-igc ({})
+  [4;35;1mSQL (11.0ms)[0m   [0mINSERT INTO messages SET message = 'asd', 
+ login='prepor',
+ chat_id='igc-first'[0m
+Completed in 25ms (View: 1, DB: 11) | 200 OK [http://defero.dev/chats/igc-first/messages]
